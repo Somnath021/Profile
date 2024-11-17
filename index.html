@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mukta Parashar's Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: block;
+    }
+    nav a:hover {
+      background-color: #575757;
+    }
+    section {
+      padding: 20px;
+      display: none; /* Initially hide all sections */
+    }
+    section.active {
+      display: block; /* Show active section */
+    }
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .profile-photo {
+      max-width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid #4CAF50;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      display: block;
+      margin: 20px auto;
+    }
+    ul, ol {
+      line-height: 1.8;
+    }
+  </style>
+  <script>
+    // Function to show the selected section
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => section.classList.remove('active')); // Hide all sections
+      document.getElementById(id).classList.add('active'); // Show the selected section
+    }
+
+    // By default, show the Introduction section
+    document.addEventListener("DOMContentLoaded", () => {
+      showSection('intro');
+    });
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>Mukta Parashar's Profile</h1>
+</header>
+
+<nav>
+  <a href="#" onclick="showSection('intro')">Introduction</a>
+  <a href="#" onclick="showSection('education')">Education</a>
+  <a href="#" onclick="showSection('achievements')">Achievements</a>
+  <a href="#" onclick="showSection('publications')">Publications</a>
+</nav>
+
+<section id="intro" class="active">
+  <h2>Introduction</h2>
+  <img src="https://via.placeholder.com/200" alt="Mukta Parashar's Photo" class="profile-photo">
+  <p>
+    Smt. Mukta Parashar is a renowned academician and researcher in the field of **Environmental Law** and **Sustainability Studies**. She has over 20 years of experience teaching at prestigious institutions worldwide, including Harvard University and the University of Oxford. Dr. Mehra’s dedication to academic excellence and her innovative research have earned her international recognition. She is also an advisor to multiple governmental and non-governmental organizations working on climate change policies.
+  </p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li>**Ph.D. in Environmental Law** - University of Oxford, 2005
+      <p>Her doctoral thesis, *"Legal Frameworks for Climate Change Adaptation,"* was a groundbreaking study that influenced global environmental policies.</p>
+    </li>
+    <li>**Masters in Law (LLM)** - Harvard University, 2001
+      <p>Specialized in International Environmental Law and received the Dean’s Award for Outstanding Academic Excellence.</p>
+    </li>
+    <li>**Bachelors in Law (LLB)** - Delhi University, 1998
+      <p>Graduated as a Gold Medalist and actively participated in moot court competitions, representing India at international platforms.</p>
+    </li>
+  </ul>
+</section>
+
+<section id="achievements">
+  <h2>Achievements</h2>
+  <ul>
+    <li>Recipient of the **"Global Environmental Scholar Award"**, 2018.</li>
+    <li>Appointed as a **Key Advisor** for the United Nations Climate Action Summit, 2020.</li>
+    <li>Delivered the **Keynote Address** at the International Conference on Climate Change, Paris, 2022.</li>
+    <li>Published over **50 research papers** in internationally reputed journals.</li>
+    <li>Authored the bestselling book **"Sustainability and Law: A Global Perspective"**, published in 2019.</li>
+    <li>Founder of the NGO **"Green Future Initiative"**, focusing on spreading awareness about environmental conservation.</li>
+  </ul>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+  <ol>
+    <li>**"The Legal Framework for Climate Change Adaptation"** - Published in *Journal of Environmental Law*, 2021.
+      <p>This paper explores innovative legal mechanisms for addressing climate challenges.</p>
+    </li>
+    <li>**"Role of Judiciary in Environmental Protection in India"** - Published in *Indian Law Review*, 2020.
+      <p>An analysis of landmark judgments and their impact on environmental policies in India.</p>
+    </li>
+    <li>**"Sustainable Development and Legal Challenges"** - Published in *International Law Journal*, 2019.
+      <p>Focuses on the intersection of sustainability and legal challenges in developing nations.</p>
+    </li>
+    <li>**"Environmental Ethics and Corporate Accountability"** - Published in *Global Business and Law Review*, 2018.</li>
+    <li>**"Renewable Energy Laws and Policy Recommendations"** - Published in *Energy Policy Journal*, 2017.</li>
+  </ol>
+</section>
+
+<footer>
+  <p>&copy; 2024 Mukta Parashar's Profile. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
